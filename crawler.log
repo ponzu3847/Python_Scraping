@@ -1,0 +1,54 @@
+[ERROR] 2021-02-12 18:50:47,733 __main__ <ipython-input-17-dac7d459b6aa>:38 ページが見つかりませんでしたlogging_example
+[ERROR] 2021-02-12 18:50:47,733 __main__ <ipython-input-17-dac7d459b6aa>:38 ページが見つかりませんでしたlogging_example
+[ERROR] 2021-02-12 18:50:47,733 __main__ <ipython-input-17-dac7d459b6aa>:38 ページが見つかりませんでしたlogging_example
+[ERROR] 2021-02-12 18:50:47,740 __main__ <ipython-input-17-dac7d459b6aa>:43 リクエスト中に例外が起きました: MissingSchema("Invalid URL '#invalid_url': No schema supplied. Perhaps you meant http://#invalid_url?")logging_example
+Traceback (most recent call last):
+  File "<ipython-input-17-dac7d459b6aa>", line 41, in logging_example
+    r=requests.get('#invalid_url',timeout=1)
+  File "/Users/shimurayuichirou/.pyenv/versions/3.8.3/lib/python3.8/site-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/Users/shimurayuichirou/.pyenv/versions/3.8.3/lib/python3.8/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/shimurayuichirou/.pyenv/versions/3.8.3/lib/python3.8/site-packages/requests/sessions.py", line 528, in request
+    prep = self.prepare_request(req)
+  File "/Users/shimurayuichirou/.pyenv/versions/3.8.3/lib/python3.8/site-packages/requests/sessions.py", line 456, in prepare_request
+    p.prepare(
+  File "/Users/shimurayuichirou/.pyenv/versions/3.8.3/lib/python3.8/site-packages/requests/models.py", line 316, in prepare
+    self.prepare_url(url, params)
+  File "/Users/shimurayuichirou/.pyenv/versions/3.8.3/lib/python3.8/site-packages/requests/models.py", line 390, in prepare_url
+    raise MissingSchema(error)
+requests.exceptions.MissingSchema: Invalid URL '#invalid_url': No schema supplied. Perhaps you meant http://#invalid_url?
+[ERROR] 2021-02-12 18:50:47,740 __main__ <ipython-input-17-dac7d459b6aa>:43 リクエスト中に例外が起きました: MissingSchema("Invalid URL '#invalid_url': No schema supplied. Perhaps you meant http://#invalid_url?")logging_example
+Traceback (most recent call last):
+  File "<ipython-input-17-dac7d459b6aa>", line 41, in logging_example
+    r=requests.get('#invalid_url',timeout=1)
+  File "/Users/shimurayuichirou/.pyenv/versions/3.8.3/lib/python3.8/site-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/Users/shimurayuichirou/.pyenv/versions/3.8.3/lib/python3.8/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/shimurayuichirou/.pyenv/versions/3.8.3/lib/python3.8/site-packages/requests/sessions.py", line 528, in request
+    prep = self.prepare_request(req)
+  File "/Users/shimurayuichirou/.pyenv/versions/3.8.3/lib/python3.8/site-packages/requests/sessions.py", line 456, in prepare_request
+    p.prepare(
+  File "/Users/shimurayuichirou/.pyenv/versions/3.8.3/lib/python3.8/site-packages/requests/models.py", line 316, in prepare
+    self.prepare_url(url, params)
+  File "/Users/shimurayuichirou/.pyenv/versions/3.8.3/lib/python3.8/site-packages/requests/models.py", line 390, in prepare_url
+    raise MissingSchema(error)
+requests.exceptions.MissingSchema: Invalid URL '#invalid_url': No schema supplied. Perhaps you meant http://#invalid_url?
+[ERROR] 2021-02-12 18:50:47,740 __main__ <ipython-input-17-dac7d459b6aa>:43 リクエスト中に例外が起きました: MissingSchema("Invalid URL '#invalid_url': No schema supplied. Perhaps you meant http://#invalid_url?")logging_example
+Traceback (most recent call last):
+  File "<ipython-input-17-dac7d459b6aa>", line 41, in logging_example
+    r=requests.get('#invalid_url',timeout=1)
+  File "/Users/shimurayuichirou/.pyenv/versions/3.8.3/lib/python3.8/site-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/Users/shimurayuichirou/.pyenv/versions/3.8.3/lib/python3.8/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/shimurayuichirou/.pyenv/versions/3.8.3/lib/python3.8/site-packages/requests/sessions.py", line 528, in request
+    prep = self.prepare_request(req)
+  File "/Users/shimurayuichirou/.pyenv/versions/3.8.3/lib/python3.8/site-packages/requests/sessions.py", line 456, in prepare_request
+    p.prepare(
+  File "/Users/shimurayuichirou/.pyenv/versions/3.8.3/lib/python3.8/site-packages/requests/models.py", line 316, in prepare
+    self.prepare_url(url, params)
+  File "/Users/shimurayuichirou/.pyenv/versions/3.8.3/lib/python3.8/site-packages/requests/models.py", line 390, in prepare_url
+    raise MissingSchema(error)
+requests.exceptions.MissingSchema: Invalid URL '#invalid_url': No schema supplied. Perhaps you meant http://#invalid_url?

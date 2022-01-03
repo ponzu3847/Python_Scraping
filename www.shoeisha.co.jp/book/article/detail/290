@@ -1,0 +1,1194 @@
+  <!DOCTYPE HTML>
+  <html>
+  <head>
+  <script>
+var dataLayer = dataLayer || [];
+  dataLayer.push({
+    'trackPageview':'SECOJP/book/article/detail/290',
+    'member' : 'nonmember',
+  });
+</script>
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PS58RX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PS58RX');</script>
+<!-- End Google Tag Manager -->
+          <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Script-Type" content="text/javascript">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta http-equiv="Imagetoolbar" content="no">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>データビジュアライゼーションの意義とは？ Pythonでできるグラフとチャートを紹介｜翔泳社の本</title>
+  <meta name="Keywords" content="翔泳社,">
+  <meta name="Description" content="　ビジネス上の意思決定に欠かせないデータ活用。その効果を最大化するビジュアライゼーションは、データ分析に携わる方であれば習得しておきたい技術です。その入門書として、CodeZineを運営する翔泳社では『データ分析者のためのPythonデータビジュアライゼーション入門』を発売。本書からデータビジュアライゼーションの意義について解説されたパートと、Pythonで利用できるグラフとチャートの例を紹介します。">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@shoeisha">
+  <meta name="twitter:creator" content="@shoeisha">
+    <meta property="og:title" content="データビジュアライゼーションの意義とは？ Pythonでできるグラフとチャートを紹介 | 翔泳社">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.shoeisha.co.jp/book/article/detail/290">
+  <meta property="og:image" content="https://codezine.jp/static/images/article/12646/12646_share.jpg" />
+  <meta property="og:site_name" content="Shoeisha">
+  <meta property="og:description" content="　ビジネス上の意思決定に欠かせないデータ活用。その効果を最大化するビジュアライゼーションは、データ分析に携わる方であれば習得しておきたい技術です。その入門書として、CodeZineを運営する翔泳社では『データ分析者のためのPythonデータビジュアライゼーション入門』を発売。本書からデータビジュアライゼーションの意義について解説されたパートと、Pythonで利用できるグラフとチャートの例を紹介します。">
+  <meta property="fb:admins" content="100002509171990">
+            <meta name="cxenseparse:sho-article-type" content="タイアップ">
+<meta name="cxenseparse:sho-article-title" content="データビジュアライゼーションの意義とは？ Pythonでできるグラフとチャートを紹介">
+<meta name="cxenseparse:sho-corner" content="">
+<meta name="cxenseparse:sho-corner-id" content="">
+<meta name="cxenseparse:sho-publish-y" content="2020">
+<meta name="cxenseparse:sho-publish-m" content="202008">
+<meta name="cxenseparse:sho-publish-d" content="20200820">
+<meta name="cxenseparse:recs:publishtime" content="2020-08-20T07:00:00+09:00">
+  <meta name="cxenseparse:recs:image" content="https://www.shoeisha.co.jp/https://codezine.jp/static/images/article/12646/12646_thumb.jpg"/>
+<meta name="cxenseparse:sho-articlepath" content="article/detail/290">
+    <!--
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      -->    <meta name="cXenseParse:pageclass" content="frontpage"/>  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="/assets/js/bootstrap.js"></script>
+  <script src="/assets/js/responsiveslides.min.js"></script>
+  <script src="/assets/js/slick.js"></script>
+  <script src="/assets/js/application.js"></script>
+  <script src="/assets/js/masterslider.min.js"></script>
+  <script src="/assets/js/tab.js"></script>
+  <script src="/assets/js/jquery.easing.min.js"></script>
+  <script src="/assets/js/jquery.matchHeight-min.js"></script>
+  <script src="/assets/js/dfp.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js" type="text/javascript"></script>
+  <link rel="alternate" type="application/rss+xml" title="" href="/rss/index.xml">
+  <link rel="alternate" type="application/rss+xml" title="" href="/rss/book/index.xml">
+  <link href="/assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="/assets/css/responsiveslides.css" rel="stylesheet" type="text/css">
+  <link href="/assets/css/slick.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/assets/css/masterslider.css" />
+  <link href='/assets/css/ms-tabs-style.css' rel='stylesheet' type='text/css'>
+  <link href="/assets/css/books.css?20200722" rel="stylesheet" type="text/css">
+  <script src="/assets/js/bootstrap-datetimepicker/bootstrap-datetimepicker.min.js"></script>
+  <link href="/assets/js/bootstrap-datetimepicker/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css">
+
+        
+  
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    <script>
+      var _UA = navigator.userAgent;
+      if (_UA.indexOf('iPhone') > -1 || _UA.indexOf('iPod') > -1 || _UA.indexOf('iPad') > -1 || _UA.indexOf('Android') > -1 ) {
+      }else{
+                    document.write('<link rel="stylesheet" href="/assets/css/non-responsive.css">');
+                }
+      // navbar opacity
+      $(window).scroll(function() {
+          var s = $(this).scrollTop();
+          if (s > 33) {
+              $(".navbar-fixed-top").addClass("navbar-fixed-top-bg1");
+              $(".navbar-fixed-top input.header-search").addClass("navbar-fixed-top-bg2");
+              $(".navbar-fixed-top .nav > li > a").addClass("navbar-fixed-top-bg3");
+          } else if (s <= 33) {
+              $(".navbar-fixed-top").removeClass("navbar-fixed-top-bg1");
+              $(".navbar-fixed-top input.header-search").removeClass("navbar-fixed-top-bg2");
+              $(".navbar-fixed-top .nav > li > a").removeClass("navbar-fixed-top-bg3");
+          }
+      });
+  </script>
+  <script type='text/javascript'>
+  init_dfp();
+  // hide menus
+  /*
+  $(document).ready(function(){
+      if (location.pathname.search('/book') < 0) {
+          $('.container-fluid').hide();
+          $('#menu_readers').hide();
+          $('#menu_houjin').hide();
+      }
+  });
+  */
+  </script>
+  <!-- Cxense script start -->
+<script type="text/javascript">
+  var cX = cX || {}; cX.callQueue = cX.callQueue || [];
+  cX.CCE = cX.CCE || {}; cX.CCE.callQueue = cX.CCE.callQueue || [];
+  var cx_props = cx_props || {}; cx_props['k'] = [];
+  var cpl = [];
+  var spl = [];
+  cX.callQueue.push(['invoke', function() {
+    var cp = {}, sa = {};
+    var cpMaxLen = 40;
+    var cpKeyLen = 20;
+    try{
+      var refhost = cX.library._findRealReferrer().split('/')[2];
+      if(refhost && location.hostname !== refhost) {
+        cp["referrer_host"] = sa["referrer_host_S"] = refhost.slice(0,cpMaxLen);
+      }
+    }catch(e){}
+    var u = ["utm_source", "utm_medium", "utm_term", "utm_content", "utm_campaign"];
+    if((typeof(spl) !== "undefined") && (Object.prototype.toString.call(spl) === "[object Array]")) {
+      Array.prototype.push.apply(u, spl);
+    }
+    if(location.search) location.search.substring(1).split("&").forEach(function(k){
+      try{
+        var v = k.split("=");
+        if(v[0].slice(0,3)==="cx_" && v[1]) {
+          sa[v[0].replace(/^cx_/,"")+"_S"] = decodeURIComponent(v[1]).slice(0,cpMaxLen);
+        } else if(u.indexOf(v[0].toLowerCase())!==-1 && v[1]) {
+          cp[v[0].toLowerCase().slice(0,cpKeyLen)] = sa[v[0].toLowerCase()+"_S"] = decodeURIComponent(v[1]).slice(0,cpMaxLen);
+        } else if((typeof(cpl) !== "undefined") && (Object.prototype.toString.call(cpl) === "[object Array]") && (cpl.indexOf(v[0].toLowerCase())!==-1 && v[1])) {
+          cp[v[0].toLowerCase().slice(0,cpKeyLen)] = decodeURIComponent(v[1]).slice(0,cpMaxLen);
+        }
+      }catch(e){}
+    });
+    if(!cX.getUserId(false)) {
+      cp["newuser"] = sa["newuser_S"] = "true";
+    }
+    else {
+      try{
+        var t = new Date().getTime() - parseInt(cX.library.m_atfr.match(/altm=(\d+)/)[1]);
+        if (t >= 1000*60*30) {
+          cX.stopAllSessionAnnotations();
+          var da = Math.floor(t/(1000*60*60*24));
+          if(da < 1) {
+            cp["elapsed"] = sa["elapsed_S"] = "\u0031\u65E5\u4EE5\u5185";
+          } else if(da < 7) {
+            cp["elapsed"] = sa["elapsed_S"] = String(da)+"\u65E5\u3076\u308A";
+          } else if(da < 31) {
+            cp["elapsed"] = sa["elapsed_S"] = String(Math.floor(da/7))+"\u9031\u9593\u3076\u308A";
+          } else if(da < 365) {
+            cp["elapsed"] = sa["elapsed_S"] = String(Math.floor(da/31))+"\u30F6\u6708\u3076\u308A";
+          } else {
+            cp["elapsed"] = sa["elapsed_S"] = "1\u5E74\u4EE5\u4E0A";
+          }
+        }
+      } catch(e) {}
+    }
+    var cx_eu = cX.getCookie('eu');
+    if (cx_eu){
+        cX.setCustomParameters({'status': 'login'});
+        cX.addExternalId({'id': cx_eu, 'type': 'sho'});
+    }
+    if (typeof eU !== 'undefined' && typeof eU.isLoggingIn === 'function') {
+        cX.setCustomParameters({'logging_in': eU.isLoggingIn()});
+    }
+    var cx_op = cX.getCookie('cx_op');
+    if (cx_op) {
+        cX.setCustomParameters({'optin_url': cx_op});
+    }
+
+    var originalRef=document.referrer;
+    if(originalRef.match(/faeb92b469b40c9d72e4-dc920caace12a27e58d45a42e86d29a2\.ssl\.cf2\.rackcdn\.com\/generic_v[0-9]+\.html/) || originalRef.match(/cdn\.cxpublic\.com\/generic_v[0-9]+\.html/)){
+        sa["cx_source_S"] = "cxrecs";
+    }
+    if(Object.keys(cp).length>0) {
+      cX.setCustomParameters(cp);
+    }
+    if(Object.keys(sa).length>0) {
+      cX.startSessionAnnotation(sa);
+    }
+    try {
+      "newuser_S" in cX.library._getSessionAnnotations() && cx_props['k'].push("newuser");
+    } catch(e) {}
+  }]);
+  cX.callQueue.push(['setSiteId', '1142970223097374056']);
+  cX.CCE.callQueue.push(['sendPageViewEvent']);
+
+</script>
+<script type="text/javascript">
+    var cX = window.cX = window.cX || {}; cX.callQueue = cX.callQueue || [];
+    cX.CCE = cX.CCE || {}; cX.CCE.callQueue = cX.CCE.callQueue || [];
+    (function(d,s,e,t){e=d.createElement(s);e.type='text/java'+s;e.async='async';e.src='https://cdn.cxense.com/cx.cce.js';t=d.getElementsByTagName(s)[0];t.parentNode.insertBefore(e,t);})(document,'script');
+</script>
+<!-- Cxense script end -->
+<!-- Cxense Customized script start -->
+<script type="text/javascript">
+  window.cXcustom = window.cXcustom || function() {(window.cXcustom.q = window.cXcustom.q || []).push(arguments)};
+  cX.callQueue.push(['invoke', function() {
+    var cx_reading_params = {origin: "sho-web", persistedQueryId: "15407cc43187c9b0981171abc4e9b4dc4e1d7c22"};
+    cXcustom("scrollDepth", function(pos){cX.sendEvent("scroll", {pos_entire_page:String(pos)+'%'}, cx_reading_params);} , 0, '', false, 1000);
+    cXcustom("scrollDepth", function(pos){cX.sendEvent("scroll", {pos_in_article:String(pos)+'%'}, cx_reading_params);}, 1, 'container_contents', true, 1000);
+    //    cXcustom("scrollDepth", function(pos){cX.sendEvent("scroll", {pos_in_articleBottom:String(pos)+'%'}, cx_reading_params);} , 2, 'top-menu', false, 1000);
+    cX.loadScript("/assets/js/cx-custom.js");
+  }]);
+</script>
+<!-- Cxense Customized script end -->
+  <!-- Facebook Pixel Code -->
+<script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init', '1704151296468367'); fbq('track', 'PageView');</script><noscript><img height="1" width="1" src="https://www.facebook.com/tr?id=1704151296468367&ev=PageView&noscript=1"/></noscript>
+<!-- End Facebook Pixel Code -->  </head>
+  <body style="">  <div class="container">
+    <!-- CXENSE Overlay Start-->
+<style>
+.toggle-panel-ad {
+    width: 100%;
+}
+@media screen and (max-width: 480px) {
+    .toggle-title {
+        width: 270px;
+        height: 31px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+    .toggle-panel-title{
+        margin:0;
+        padding: 4px 10px 4px 10px;
+        font-size: 0.75em;
+        font-weight: bold;
+        color: black;
+        margin-left: 4px;
+    }
+    .overlayBody {
+        padding: 2px 2px 2px 2px;
+    }
+}
+</style>
+
+<div id="cxOverlayParent" class="toggle-panel">
+    <div id="parent-toggle-title" class="toggle-title"></div>
+    <div class="toggle-close"></div>
+    <div class="toggle-panel-ad">
+      <!-- Cxense Module: オーバーレイ -->
+      <div id="cx_55a3fcf333007147d886a39f80a4e8edde92c983"></div>
+      <script type="text/javascript" src="/assets/js/cxOverlay.js?20210204"></script>
+      <script type="text/javascript">
+          var cX = window.cX = window.cX || {}; cX.callQueue = cX.callQueue || [];
+          cX.CCE = cX.CCE || {}; cX.CCE.callQueue = cX.CCE.callQueue || [];
+          cX.CCE.callQueue.push(['run',{
+            widgetId: '55a3fcf333007147d886a39f80a4e8edde92c983',
+            targetElementId: 'cx_55a3fcf333007147d886a39f80a4e8edde92c983'
+          }, '', function(e, f) {
+              if (e.httpStatus == 200 && e.response.items.length > 0) {
+
+                var data = {
+                    contentHeight: 150,
+                    contentWidth: 670,
+                };
+                var device = 'pc';
+                var ua = navigator.userAgent;
+                var titleHeight = 50;
+
+                if(ua.indexOf("iPhone") != -1 || ua.indexOf("iPod") != -1|| (ua.indexOf("Android") != -1 && ua.indexOf("Mobile") != -1)){
+                    device = 'sp';
+                    titleHeight = 34;
+                    data.contentHeight = 95;
+                } else {
+                    $('#parent-toggle-title').hide();
+                }
+
+                document.getElementById("toggle-header").style.height = titleHeight+ "px";
+                document.getElementById("toggle-close").style.width= titleHeight+ "px";
+                document.getElementById("toggle-close").style["font-size"] = (titleHeight * 0.7)+ "px";
+
+                var c = cxOverlay.init(titleHeight,"sho-web","15407cc43187c9b0981171abc4e9b4dc4e1d7c22", device);
+                c(data);
+
+              }
+          }]);
+      </script>
+      <!-- Cxense Module End -->
+      </div>
+</div>
+<!-- CXENSE Overlay End-->
+<link href="/assets/css/cxOverlay.css?20191106" rel="stylesheet" type="text/css" >
+  </div>
+        <a id="pagetop" name="pagetop"></a>
+  <div id="cx_contents_block">
+  <header role="banner" id="top-menu" class="navbar">
+    <button data-target=".bs-navbar-collapse" data-toggle="collapse" type="button" class="navbar-toggle"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+    <div class="navbar-header mobile"> <a class="navbar-brand" href="/book"> <img src="/assets/img/logo/sebook.png" class="img-responsive"> </a> </div>
+    <nav class="navbar navbar-fixed-top collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <div class="container-fluid">
+        <ul class="nav navbar-nav">
+          <li> <a href="/book/genre/1">コンピュータ</a> </li>
+          <li class="dropdown"> <a data-toggle="dropdown" class="dropdown-toggle" href="#">資格 <b class="caret"></b> </a>
+            <ul class="dropdown-menu">
+              <li> <a onclick="$('#navtop').attr('class', 'navbar navbar-default')" href="/exampress/it/">IT資格</a> </li>
+              <li> <a onclick="$('#navtop').attr('class', 'navbar navbar-default')" href="/exampress/biz">ビジネス資格</a> </li>
+              <li> <a onclick="$('#navtop').attr('class', 'navbar navbar-default1')" href="/exampress/fukushi">福祉資格</a> </li>
+              <li> <a onclick="$('#navtop').attr('class', 'navbar navbar-default1')" href="/exampress/eng">工学資格</a> </li>
+            </ul>
+          </li>
+          <li> <a href="/book/genre/5">ビジネス</a> </li>
+          <li> <a href="/book/genre/7">実用</a> </li>
+          <li class="dropdown"> <a data-toggle="dropdown" class="dropdown-toggle" href="#">電子書籍 <b class="caret"></b> </a>
+            <ul class="dropdown-menu">
+              <li> <a href="/book/ebooks">電子書籍一覧</a> </li>
+              <li> <a href="http://www.seshop.com/product/327/" target="_blank">電子書籍【PDF版】</a> </li>
+              <li> <a href="/campaign/book/digitalfirst/" target="_blank">デジタルファースト</a> </li>
+            </ul>
+          </li>
+          <li> <a href="/book/app/">アプリ</a> </li>
+          <li class="dropdown"> <a data-toggle="dropdown" class="dropdown-toggle" href="#">POD <b class="caret"></b> </a>
+            <ul class="dropdown-menu">
+              <li> <a href="/book/pod">POD一覧</a> </li>
+              <li> <a href="/campaign/book/digitalfirst/">デジタルファースト</a> </li>
+            </ul>
+          </li>
+          <li> <a href="/book/audio/">音声</a> </li>
+                    <li><div id="social">
+  <ul style=" margin-top: 5px;">
+    <li> <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.shoeisha.co.jp%2Fbook%2Farticle%2Fdetail%2F290" target="_blank"><img src="/assets/img/bo-facebook.png"></a>
+    </li>
+    <li> 
+    <a href="https://twitter.com/intent/tweet?text=データビジュアライゼーションの意義とは？ Pythonでできるグラフとチャートを紹介｜翔泳社の本&url=https%3A%2F%2Fwww.shoeisha.co.jp%2Fbook%2Farticle%2Fdetail%2F290" rel=”nofollow” target="_blank"><img src="/assets/img/bo-twitter.png"></a>
+    </li>
+    <li> <a href="https://plus.google.com/share?url=https%3A%2F%2Fwww.shoeisha.co.jp%2Fbook%2Farticle%2Fdetail%2F290" onclick="window.open(this.href, 'Gwindow', 'width=650, height=450, menubar=no, toolbar=no, scrollbars=yes'); return false;"><img src="/assets/img/bo-google.png"></a>
+    <li>
+    <a href="http://b.hatena.ne.jp/entry/https%3A%2F%2Fwww.shoeisha.co.jp%2Fbook%2Farticle%2Fdetail%2F290" class="hatena-bookmark-button" data-hatena-bookmark-layout="simple" title="翔泳社の本"><img src="/assets/img/bo-hatena.png" alt="はてなブックマークに追加"/></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+    </li>
+        <li><div class="line-it-button" data-lang="ja" data-type="share-b" data-url="" style="display: none;"></div>
+ <script src="https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js" async="async" defer="defer"></script></li>
+  </ul>
+</div>
+</li>
+        </ul>
+        <form action="/search" role="search" class="navbar-form navbar-right search-box">
+          <div class="input-group input-group-sm">
+            <input type="text" placeholder="本を探す" name="search" class="form-control" value="" >
+            <span class="input-group-btn">
+            <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+            </span> </div>
+
+
+          <!--
+              <div class="form-group">
+                <label for="search">
+                  <span class="glyphicon glyphicon-search"></span>
+                </label>
+                <input type="text" name="search" placeholder="本を探す" value="" class="form-control input-sm header-search">
+              </div>
+              -->
+        </form>
+      </div>
+    </nav>
+    <div class="container second-navbar">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-5">
+          <div class="navbar-header"> <a class="navbar-brand" href="/book"><img src="/assets/img/logo/sebook.png" class="img-responsive"></a></div>
+          <p class="pull-left"><strong>翔泳社の本</strong></p>
+        </div>
+        <div class="col-lg-8 col-md-8 col-sm-7">
+            <div class="login-menu pull-right">
+  
+
+<script>
+  $(function(){
+    //if (get_view_mode() == 'pc') $('a[rel=popover]').popover();
+
+    $('#modal_login').on('shown.bs.modal', function(e) {
+      $("#email").focus();
+    });
+
+    $('#modal_login').on('hidden.bs.modal', function(e) {
+      $('#valid_message').html('');
+    });
+
+    if (location.hash.indexOf('#login_e') == 0){
+      $('#valid_message').html('<font color="red"><b>IDまたはパスワードが違います。</b></font>');
+      $('#modal_login').modal('show')
+    }
+  });
+</script>
+
+        <a class="btn btn-warning" href="/book/id/?ref=/book/article/detail/290" role="button">会員登録（無料）</a>
+      <a class="btn btn-default" data-toggle="modal" href="#modal_login">ログイン</a>
+  
+        </div>
+
+        <div class="second-navmenu pull-right">
+            <div class="btn-group"> <a data-toggle="dropdown" class="btn btn-default dropdown-toggle" id="menu_press">お知らせ <span class="caret"></span> </a>
+              <ul class="dropdown-menu" role="menu">
+                <li> <a href="/press/detail/500">翔泳社書籍取り扱いオンラインストアのご案内</a> </li>
+              </ul>
+            </div>
+            <div class="btn-group"> <a data-toggle="dropdown" class="btn btn-default dropdown-toggle" id="menu_readers">読者の皆様へ <span class="caret"></span> </a>
+              <ul class="dropdown-menu" role="menu">
+                <li> <a href="/book/copyright">著作権について</a> </li>
+                <li> <a href="/book/errata">正誤表</a> </li>
+                <li> <a href="/book/faq">よくある質問</a> </li>
+                <li> <a href="/book/qa">書籍に関する問い合わせ</a> </li>
+                <li> <a href="/book/download">ダウンロード</a> </li>
+                <li> <a href="/article">コラム</a> </li>
+              </ul>
+            </div>
+            <div class="btn-group"> <a data-toggle="dropdown" class="btn btn-default dropdown-toggle" id="menu_houjin">書店・法人様 <span class="caret"></span> </a>
+              <ul class="dropdown-menu" role="menu">
+                <li> <a href="/bookstore">書店様</a> </li>
+                <li> <a href="/biz">企業・教育機関様</a> </li>
+              </ul>
+            </div>
+            </div>
+
+
+      </div>
+    </div>
+    </div>
+
+    <div class="mobile sp-search-box" style="display:none">
+      <form action="/search" role="search" class="navbar-form navbar-right">
+        <div class="input-group input-group-sm">
+          <input type="text" placeholder="本を探す" name="search" class="form-control" value="" style="font-size: 16px;">
+          <span class="input-group-btn">
+          <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+          </span> </div>
+      </form>
+    </div>
+
+    <div class="login-menu mobile text-center">
+  
+
+<script>
+  $(function(){
+    //if (get_view_mode() == 'pc') $('a[rel=popover]').popover();
+
+    $('#modal_login').on('shown.bs.modal', function(e) {
+      $("#email").focus();
+    });
+
+    $('#modal_login').on('hidden.bs.modal', function(e) {
+      $('#valid_message').html('');
+    });
+
+    if (location.hash.indexOf('#login_e') == 0){
+      $('#valid_message').html('<font color="red"><b>IDまたはパスワードが違います。</b></font>');
+      $('#modal_login').modal('show')
+    }
+  });
+</script>
+
+        <a class="btn btn-warning" href="/book/id/?ref=/book/article/detail/290" role="button">会員登録（無料）</a>
+      <a class="btn btn-default" data-toggle="modal" href="#modal_login">ログイン</a>
+      </div>
+
+  </header>
+  <div class="container container_contents">      <style type="text/css">
+  .shopbutton {
+	background-color: #008ccf;
+        display:inline-block;
+	color: #ffffff;
+	text-decoration:none;
+        font-size:100%;
+	padding:3px 13px 3px 13px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	border:none;
+	position:relative;
+	cursor:pointer;
+	margin:5px 5px 0 0;
+}
+
+.shopbutton:hover {
+	background-color: rgba(0, 140, 207,0.7);
+	color: #ffffff;
+	text-decoration:none;
+}
+
+.shopbutton:active {
+	background-color: rgba(0, 140, 207,0.7);
+	color: #ffffff;
+	text-decoration:none;
+}
+
+.shopbutton:visited {
+	color: #ffffff;
+	text-decoration:none;
+}
+  </style>
+<!--script src="/lib/js/recommend.js"></script-->
+<link href="/assets/css/media.css?v2" rel="stylesheet" type="text/css">
+<div id="contents" itemscope itemtype="http://schema.org/Article">   <h1 class="h101 h101-article" itemprop="headline">データビジュアライゼーションの意義とは？ Pythonでできるグラフとチャートを紹介</h1>
+  <div class="detailBlock">
+    <div class="detailUit cf">
+           <div class="hidden-sm">               <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<ul class="socialBlock cf">
+  <li class="twitterBtn">
+  <a href="https://twitter.com/share" class="twitter-share-button" data-via="shoeisha_books" data-lang="ja" data-url="https://www.shoeisha.co.jp/book/article/detail/290" data-text="データビジュアライゼーションの意義とは？ Pythonでできるグラフとチャートを紹介">ツイート</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+  </li>
+  <li class="facebookBtn"><div class="fb-share-button" data-type="button_count" data-href="https://www.shoeisha.co.jp/book/article/detail/290"></div></li>
+  <li class="pocketBtn" style="width: 105px;">
+      <a data-pocket-label="pocket" data-pocket-count="horizontal" class="pocket-btn" data-lang="ja" data-save-url="https://www.shoeisha.co.jp/book/article/detail/290"></a>
+      <script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script>
+  </li>
+  <li class="hatenaBtn">
+    <a href="http://b.hatena.ne.jp/entry/https://www.shoeisha.co.jp/book/article/detail/290" class="hatena-bookmark-button" data-hatena-bookmark-layout="simple-balloon" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async></script>
+  </li>
+</ul>
+
+<script type="text/javascript">
+  window.___gcfg = {lang: 'ja'};
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/platform.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+ </div>
+    </div>
+    <!-- / .detailUit -->
+
+    <div class="authorDetail cf">
+      <div class="authorName" itemprop="author" itemscope itemtype="http://schema.org/Person">                                          </div>
+      <div class="day" itemprop="datepublished">2020/08/20 07:00</div>
+    </div>
+    <!-- / .authorDetail -->
+
+        <div class="topSection cf articleSummary">
+      <p><span itemprop="description">　ビジネス上の意思決定に欠かせないデータ活用。その効果を最大化するビジュアライゼーションは、データ分析に携わる方であれば習得しておきたい技術です。その入門書として、CodeZineを運営する翔泳社では『データ分析者のためのPythonデータビジュアライゼーション入門』を発売。本書からデータビジュアライゼーションの意義について解説されたパートと、Pythonで利用できるグラフとチャートの例を紹介します。
+</span></p>
+            <figure class="rBox w150"><img itemprop="image" src="https://codezine.jp/static/images/article/12646/12646_thumb.jpg" width="200" height="150" alt=""></figure>
+       </div>
+    <!-- / .topSection -->
+        <div class="article" itemprop="articleBody">
+      <!-- cxenseparse_start -->
+                        <section class="columnSection">
+  本記事は『<a href="https://www.amazon.co.jp/dp/479816397X?tag=searticle1-22" target="_blank"><strong>データ分析者のためのPythonデータビジュアライゼーション入門 コードと連動してわかる可視化手法</strong></a>』（小久保奈都弥）から抜粋したものです。掲載にあたり一部を編集しています。</section>
+<h2>意思決定におけるデータビジュアライゼーション</h2>
+<h3>意思決定の判断ツール</h3>
+<p>　私たちがビジネスにおいて日常的に行っているのが<strong>意思決定</strong>です。そのレベルは様々ですが、あらゆる事象に対して意思決定が行われています。</p>
+<h3>意思決定の主体：機械</h3>
+<p>　ビジネスにおける意思決定において<strong>データの活用</strong>に注目が集まりました。ビジネスにおける意思決定には、人間による判断が多く介在します。その判断の際に「人間の判断が必要なもの」と「パターン化されたもの」に大きく分けられます。パターン化されているように一定の規則に則って判断を下す<strong>反復的な意思決定</strong>においては、AIによる判別や予測の領域において<strong>業務の自動化</strong>などの<strong>データの利活用</strong>が進んでいます。自動化された結果に基づいた意思決定はビジネスの場においては日々繰り返し行われる業務によく用いられます。</p>
+<h3>意思決定の主体：人間</h3>
+<p>　一方、戦略的な判断が必要な時や、今までとは異なった行動変容を行う必要がある時など、機械的には決められない意思決定の場面においてはデータビジュアライゼーションはデータ活用の1つの手段として適しています。変化の多い現代においては、求められる意思決定のスピードが速くなってきています。そのため一目で定量的な情報を理解できるデータビジュアライゼーションは非常に効果的です。</p>
+<p>　従来からビジュアライゼーションをビジネスで使う手法として、Excelによるグラフ描画の機能が多くの企業でよく利用されています。また、近年はBIツールで対話的なデータ集計・ビジュアライゼーションを行うことで、意思決定の速度を速めようとする動きも見受けられます。</p>
+<p>　また、意思決定の主体が機械的な判別の場合においても、結果の解釈を行うのは人間です。</p>
+<p>　そのため機械が算出した結果を用いて問題ないのかの判断するのも人間が行う必要があり、その際にもデータビジュアライゼーションは結果の解釈において有効な手段です（図1.7）。</p>
+<figure>
+  <img alt="図1.7　意思決定主体とデータ活用の方法" src="https://codezine.jp/static/images/article/12646/12646_01.jpg" title="図1.7　意思決定主体とデータ活用の方法" /> <figcaption>図1.7　意思決定主体とデータ活用の方法 </figcaption></figure>
+<h2>データビジュアライゼーションの意義</h2>
+<h3>データの情報処理プロセス</h3>
+<p>　情報の処理のプロセスを表すものとして、DIKWピラミッドというものがあります（図1.8）。</p>
+<figure>
+  <img alt="図1.8　DIKWピラミッド" src="https://codezine.jp/static/images/article/12646/12646_02.jpg" title="図1.8　DIKWピラミッド" /> <figcaption>図1.8　DIKWピラミッド </figcaption></figure>
+<p>　ピラミッドの地面から近い順に、</p>
+<ul>
+  <li>
+    Data
+  </li>
+  <li>
+    Information
+  </li>
+  <li>
+    Knowledge
+  </li>
+  <li>
+    Wisdom
+  </li>
+</ul>
+<p>という情報処理プロセスの順番に、情報の価値のレベルが高くなることを示しています。</p>
+<p>　<strong>Data</strong>は観測された事実の集まりであり、それが何も処理がなされていない状態を指します。</p>
+<p>　Dataを<strong>Information</strong>へ変換する作業は、データを構造化することであり、基本的なデータ分析の業務において行われています。</p>
+<p>　構造化されて意味を持ったInformationから<strong>Knowledge</strong>へ変換するためには、データの背景を知り、文脈を持って事実を伝える必要があります。データに関する背景知識や経験といった人間の有している知見を組み合わせることがKnowledgeへと変換する際に必要であると言われています。ビジュアライゼーションを行うことにより、直感に訴えることができ、情報を元に背景知識と照らして考えやすくなります（Knowledgeに変換）。</p>
+<p>　さらに、Knowledgeを元に人間による判断やより深い解釈を加えて、「何を行うべきか」というデータには含まれなかった<strong>新たな価値</strong>を生み出し<strong>Wisdom</strong>へと変換させます。</p>
+<p>　データ分析を行い、ビジュアライゼーションを行う意義は生のデータから、より価値の高い情報を生み出していくことであると言えます。</p>
+<h3>探索的データ分析におけるビジュアライゼーション</h3>
+<p>　データ分析者が分析用のデータを受け取った際、データの概観を知るために、<strong>データのばらつき、基本統計量</strong>などを<strong>可視化</strong>して確認します（この段階で行われるのは<strong>探索</strong>にあたる処理です。主にデータ分析担当者が自身の疑問に対して調査を行うステップでもあります）。</p>
+<p>　前処理を行う前段階において、データの概要を知るために、可視化は有効な手段だからです。数値そのものを見るよりも簡単なグラフを作成して、概観を知ることで、データの理解を進めることができます。具体的には、データの収集・データの集計などを行いながら<strong>散布図・ヒストグラム・箱ひげ図</strong>等を用いることで、データの概観を把握し、理解を深めてさらに分析を進める点を明確にして深い調査を行っていきます（図1.9）。</p>
+<figure>
+  <img alt="図1.9　本書の扱う範囲" src="https://codezine.jp/static/images/article/12646/12646_03.jpg" title="図1.9　本書の扱う範囲" /> <figcaption>図1.9　本書の扱う範囲 </figcaption></figure>
+<p>　これはDataをInformationに変換していく過程で多く行われます。</p>
+<h3>データ分析結果の伝達のためのビジュアライゼーション</h3>
+<p>　伝達における説明的な可視化でよく利用されるのは、<strong>棒グラフ・折れ線グラフ・円グラフや、インフォグラフィック</strong>等の方法です。情報の読み手にリテラシーをあまり必要としない表現を行います。伝達の際にはデータに隠れたストーリーや文脈を表現します。</p>
+<p>　データ分析者は、データを処理するエンジニアのような役割と同時に、今や<strong>データを通じたコミュニケーションを行う役割</strong>を担っています。</p>
+<p>　そのコミュニケーション手法としての<strong>ビジュアライゼーション</strong>があります。これは、InformationをKnowledgeへ変換させるために重要です。また、見た目の美しさが重要となるのも説明的な可視化の特徴の1つです（図1.9）。</p>
+<h3>概念的なビジュアライゼーションとデータドリブンなビジュアライゼーション</h3>
+<p>　定性的な情報（数字ではなく文書等で保存されているデータ）の場合には、<strong>概念的なビジュアライゼーション</strong>が多く用いられます。概念的なビジュアライゼーション手法としては、例えば、思考や構造化のためのフレームワークがあります。</p>
+<p>　ビジュアライゼーションにより定性的な情報が整理され、その裏付けとしてデータを用いた定量的な分析が必要となった際には、データに基づいたデータドリブンなビジュアライゼーションの必要性が出てくることが多くあります。最終的に何かの事象について取りまとめを行う際には、概念的なビジュアライゼーションとデータに基づいたビジュアライゼーションの両方を用いて情報を整理し、表現されることが一般的です。</p>
+<p>　本書では<strong>定量情報を中心とした情報のビジュアライゼーション</strong>について取り扱います。</p>
+<h2>データビジュアライゼーションのステップ</h2>
+<p>　効果的なビジュアライゼーションを行うためには、データから見出したいことを明確にしてどのようなストーリーを持って伝えるのかを、デザインする必要があります。</p>
+<h3>(1)データの着目点を考える</h3>
+<p>　まずデータを用いて知りたいことや、伝えたいことを明確にします。大きな道筋を決めることでその次のステップがわかります。また、データのビジュアライゼーションを行いながら次の着目点を探すこともあります。</p>
+<p>　データを用いて知りたいことやデータの中に含まれる伝えたいメッセージを思い描いてから表1.1に含まれる内容について表現することが多いと考えられます。</p>
+<figure>
+  <img alt="表1.1　概要・変化・比較・構成・関係" src="https://codezine.jp/static/images/article/12646/12646_05.jpg" title="表1.1　概要・変化・比較・構成・関係" /> <figcaption>表1.1　概要・変化・比較・構成・関係 </figcaption></figure>
+<h3>(2)データの収集・処理を行う</h3>
+<p>　着目点に適したデータを収集し、データの前処理や分析を行います。</p>
+<p>　変化を知りたい場合は時系列の情報や条件変更の前後の情報を収集します。変化を比較したい場合は比較対象となるデータを集める必要があります。データの収集が終わったら、適したデータになっているかをその内容を確認したり、必要な形にデータの前処理を行ったりします。　この段階でデータが使えるものであるのか、本来想定していたより適したデータではなかったのかの仮説検証も行います。</p>
+<h3>(3)着目点に応じて適切なビジュアライゼーションを行う</h3>
+<p>　着目点に応じてメッセージが伝わるようなデータのビジュアライゼーションを行います。どのような視覚表現が適しているかは、データ分析者が読み手のことも考えながら決定します。例えば、着目点を変化とした場合は折れ線グラフがよく用いられ、構成とした場合には積み上げ棒グラフ等が用いられます。</p>
+<p>　ビジュアライゼーションの領域においては、"Story telling"という言葉がよく使われていますが、説明的なビジュアライゼーションの場合は、着目点について、文脈をもって表現することが必要です。</p>
+<p>　1つのビジュアライゼーションが終わったら、さらに深掘りをしたり、表現の工夫ができるかを考えたりして、よりわかりやすいビジュアライゼーションにするための作業を繰り返します（図1.11）。</p>
+<figure>
+  <img alt="図1.11　ビジュアライゼーションを繰り返す" src="https://codezine.jp/static/images/article/12646/12646_06.jpg" title="図1.11　ビジュアライゼーションを繰り返す" /> <figcaption>図1.11　ビジュアライゼーションを繰り返す </figcaption></figure>
+<section class="columnSection">
+  以下では本書で紹介するグラフ、チャートのうち主な3種類を紹介します。こうした形でデータを可視化できるとイメージを掴んでいただければ幸いです。</section>
+<h2>ヒートマップ</h2>
+<p>　ヒートマップは行列の形に並んでいる値の大小に応じて色を変化せるビジュアライゼーション手法です。</p>
+<p>　ヒートマップはクロス集計後のデータの可視化によく用いられます。また、探索的なデータ分析の段階においては相関行列を作成した後の可視化手法としてもよく用いられています。ここではカフェの商品の月別の販売量を表したcafe.csvを用います。まずはデータの読み込みを行います（リスト5.68）。</p>
+<div class="src_frame">
+  <div class="caption">
+    リスト5.68　カフェの商品の月別の販売量のデータ
+  </div>
+  <pre class="prettyprint">
+# データ読み込みとデータ定義
+cafe = pd.read_csv("cafe.csv", header=0, index_col=0)
+cafe
+</pre>
+</div>
+<div class="caption">
+  Out
+</div>
+<figure>
+  <img alt="データの読み込み" src="https://codezine.jp/static/images/article/12646/12646_07.jpg" title="データの読み込み" /></figure>
+<p>　次にヒートマップで表現してみましょう。</p>
+<p>　sns.heatmap関数を実行します。ヒートマップを描画できます（リスト5.69）。</p>
+<div class="src_frame">
+  <div class="caption">
+    リスト5.69　ヒートマップの描画例①
+  </div>
+  <pre class="prettyprint">
+sns.set(font="meiryo")
+sns.heatmap(cafe)
+</pre>
+</div>
+<div class="caption">
+  Out
+</div>
+<figure>
+  <img alt="ヒートマップ" src="https://codezine.jp/static/images/article/12646/12646_08.jpg" title="ヒートマップ" /></figure>
+<h2>サンバーストチャート</h2>
+<p>　サンバーストチャートは階層構造をしたデータを円グラフで表現をする方法で、割合を表現する際に用いられます。階層の異なる区分の割合を一度に表現することができ、同一のレベルの階層間の割合の比較を行うことができます。</p>
+<div class="src_frame">
+  <div class="caption">
+    リスト5.74　サンバーストチャートの描画例
+  </div>
+  <pre class="prettyprint">
+# データ定義
+org = [
+        {"name": "全社", "parent": "", "num": 50},
+        {"name": "人事・総務部", "parent": "全社", "num": 10},
+        {"name": "営業部", "parent": "全社", "num": 20},
+        {"name": "第1営業室", "parent": "営業部", "num": 15},
+        {"name": "第2営業室", "parent": "営業部", "num": 5},
+        {"name": "開発部", "parent": "全社", "num": 20},
+        {"name": "第1開発室", "parent": "開発部", "num": 10},
+        {"name": "第2開発室", "parent": "開発部", "num": 7},
+        {"name": "相談窓口", "parent": "開発部", "num": 3},
+    ]
+
+# グラフ定義
+trace = go.Sunburst(labels=[record["name"] for record in org],
+                    parents=[record["parent"] for record in org],
+                    values=[record["num"] for record in org],
+                    branchvalues="total",
+                    outsidetextfont={"size": 30, "color": "#82A9DA"},
+)
+
+# レイアウト定義
+layout = go.Layout(margin=go.layout.Margin(t=0, l=0, r=0, b=0))
+
+# 描画
+plotly.offline.iplot(go.Figure([trace], layout))
+</pre>
+</div>
+<div class="caption">
+  Out
+</div>
+<figure>
+  <img alt="サンバーストチャート" src="https://codezine.jp/static/images/article/12646/12646_09.jpg" title="サンバーストチャート" /></figure>
+<h2>レーダーチャート</h2>
+<p>　レーダーチャートは順序尺度を複数含むデータの表現に適しています。例えば5段階評価のアンケートの平均などをレーダーチャートで表すと、どの項目が相対的に良い（悪い）のかを比較することができます。</p>
+<div class="src_frame">
+  <div class="caption">
+    リスト5.75　1つのレーダーチャートの描画例
+  </div>
+  <pre class="prettyprint">
+# データ定義
+data = [
+    {"label": "品質", "value": 5},
+    {"label": "価格", "value": 4},
+    {"label": "配達", "value": 2.7},
+    {"label": "カスタマーサービス", "value": 3.4},
+    {"label": "サイトの使いやすさ", "value": 4.3},
+    {"label": "写真と実物の一致度", "value": 3.5},
+]
+
+df = pd.DataFrame({
+    "label": [record["label"] for record in data],
+    "value": [record["value"] for record in data],
+})
+
+print(df)
+
+# グラフ定義
+fig = px.line_polar(df, r="value", theta="label", line_close=True)
+
+# レイアウト定義
+fig.update_traces(fill="toself")
+
+# 描画
+fig.show()
+</pre>
+</div>
+<div class="caption">
+  Out
+</div>
+<figure>
+  <img alt="レーダーチャート" src="https://codezine.jp/static/images/article/12646/12646_10.jpg" title="レーダーチャート" /></figure>
+<section class="columnSection">
+  <div class="imgLRBlock cf">
+    <figure class="imgL">
+      <a href="https://www.amazon.co.jp/dp/479816397X?tag=searticle1-22" target="_blank"><img alt="データ分析者のためのPythonデータビジュアライゼーション入門" src="https://www.seshop.com/original/images/product/23725/L.png" style="margin-top:5px; border:1px solid #808080;" title="データ分析者のためのPythonデータビジュアライゼーション入門" width="240px" /></a></figure>
+    <div class="ovh">
+      <p><a class="shopbutton" href="https://www.amazon.co.jp/dp/479816397X?tag=searticle1-22" target="_blank">Amazon</a>　<a class="shopbutton" href="https://www.seshop.com/product/detail/23725" target="_blank">SEshop</a>　<a class="shopbutton" href="https://www.shoeisha.co.jp/book/detail/9784798163970" target="_blank">その他</a></p>
+      <br />
+      <h4>データ分析者のためのPythonデータビジュアライゼーション入門<br />
+        コードと連動してわかる可視化手法</h4>
+      <p style="font-size: small;">著者：小久保奈都弥<br />
+        発売日：2020年8月6日（木）<br />
+        定価：2,400円＋税</p>
+      <h5>本書について</h5>
+      <p>本書はPythonのライブラリを利用して、ビジュアライゼーションする時に必要な考え方と基本的なビジュアライゼーション手法を解説。</p>
+    </div>
+  </div>
+</section>
+<p>&nbsp;</p>
+
+                              <!-- cxenseparse_end -->
+    </div>
+    <!-- / .article -->
+
+    
+        
+                <div class="detailUit btnUit cf ">
+      <ul class="detailBtn">
+                                      </ul>
+    </div>
+    <!-- / .detailUit -->
+  </div>
+  <!-- / .detailBlock -->
+
+  <br>
+      
+  <div id="rec-related-book-list" class="booklist" style="margin-top: 0">
+    <h3>関連書籍</h3>
+  </div>
+
+    <section class="newBlock cx_recommend">
+  <!--div id="recommend_block"-->
+     </div>
+</section>
+<!-- / .newsBlock -->
+
+  
+  
+  
+      
+    
+      
+              
+  
+        
+          <!-- ad -->
+      <!-- /ad -->
+  <!--%#= ad_articletop_parts %-->
+
+      
+    
+
+   </div>
+
+<div class="footer-menu">
+  <div class="container">
+    <div class="row no-gutters">
+      <div class="col-xs-3"><a href="/book/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span><br>
+        TOP</a></div>
+      <div class="col-xs-3">
+      <a class="footer-share-link" aria-hidden="true"
+            data-toggle="popover"
+            data-placement="top" href="#social-icon"> <span class="glyphicon glyphicon-link" aria-hidden="true"></span><br>
+              保存・シェア</a>
+
+          <div id="social-icon" class="hide">
+<div id="social">
+  <ul style=" margin-top: 5px;">
+    <li> <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.shoeisha.co.jp%2Fbook%2Farticle%2Fdetail%2F290" target="_blank"><img src="/assets/img/bo-facebook.png"></a>
+    </li>
+    <li> 
+    <a href="https://twitter.com/intent/tweet?text=データビジュアライゼーションの意義とは？ Pythonでできるグラフとチャートを紹介｜翔泳社の本&url=https%3A%2F%2Fwww.shoeisha.co.jp%2Fbook%2Farticle%2Fdetail%2F290" rel=”nofollow” target="_blank"><img src="/assets/img/bo-twitter.png"></a>
+    </li>
+    <li> <a href="https://plus.google.com/share?url=https%3A%2F%2Fwww.shoeisha.co.jp%2Fbook%2Farticle%2Fdetail%2F290" onclick="window.open(this.href, 'Gwindow', 'width=650, height=450, menubar=no, toolbar=no, scrollbars=yes'); return false;"><img src="/assets/img/bo-google.png"></a>
+    <li>
+    <a href="http://b.hatena.ne.jp/entry/https%3A%2F%2Fwww.shoeisha.co.jp%2Fbook%2Farticle%2Fdetail%2F290" class="hatena-bookmark-button" data-hatena-bookmark-layout="simple" title="翔泳社の本"><img src="/assets/img/bo-hatena.png" alt="はてなブックマークに追加"/></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+    </li>
+        <li><div class="line-it-button" data-lang="ja" data-type="share-b" data-url="" style="display: none;"></div>
+ <script src="https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js" async="async" defer="defer"></script></li>
+  </ul>
+</div>
+</div>
+
+        </div>
+      <div class="col-xs-3"><a href="/book/article/"><span class="glyphicon glyphicon-file" aria-hidden="true"></span><br>
+        記事一覧</a></div>
+      <div class="col-xs-3"><a href="https://www.shoeisha.co.jp/book/id/?ref=/book/"><span class="glyphicon glyphicon-user" aria-hidden="true"></span><br>
+        会員登録</a></div>
+    </div>
+
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
+<script src="/assets/js/related_book.js"></script>
+<script type="text/javascript">
+
+    var pop = $("[data-toggle=popover]").popover({
+        html: true,
+        container: 'body',
+        content: function() {
+          return $('#social-icon').html();
+        }
+    })
+    .data('bs.popover')
+    .tip()
+    ;
+    pop.addClass('footer-popover');
+    $('.footer-share-link').on('click', function(e) {
+      e.preventDefault();
+      var popover = $('.i-footer-popover');
+      return false;
+    });
+
+    $('.footer-share-link').on('show.bs.popover', function(e) {
+      $(this).addClass('footer-show-popover');
+      $(this).removeClass('footer-hide-popover');
+    });
+    $('.footer-share-link').on('hide.bs.popover', function(e) {
+      $(this).addClass('footer-hide-popover');
+      $(this).removeClass('footer-show-popover');
+    });
+
+    $(function() {
+      var ua = window.navigator.userAgent.toLowerCase();
+      if (ua.indexOf('iphone') != -1 && ua.indexOf('safari') !== -1) {
+        pop.addClass('i-footer-popover');
+      }
+
+      var relatedWidget = RelatedBookWidget.init(document.getElementById('rec-related-book-list'));
+      if (location.href.indexOf('book/article/detail/191') !== -1) {
+        var books = [
+          {'sho-isbn': '9784798157542'},
+          {'sho-isbn': '9784798155432'},
+          {'sho-isbn': '9784798153759'},
+          {'sho-isbn': '9784798156866'},
+        ];
+        relatedWidget.fetchView(books);
+      } else {
+        relatedWidget.articlePage.build();
+      }
+    });
+</script>
+
+
+</div>
+  </div>
+  <footer>       <div class="container support_link">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" href="#footer-press">お知らせ
+                  <span class="caret"></span>
+                </a>
+              </div>
+              <div id="footer-press" class="accordion-body collapse">
+                <div class="accordion-inner">
+                  <ul>
+                    <li>
+                      <a href="/press/detail/500">翔泳社書籍取り扱いオンラインストアのご案内</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" href="#support">読者の皆様へ
+                  <span class="caret"></span>
+                </a>
+              </div>
+              <div id="support" class="accordion-body collapse">
+                <div class="accordion-inner">
+                  <ul>
+                    <li>
+                      <a href="/book/errata">正誤表</a>
+                    </li>
+                    <li>
+                      <a href="/book/faq">よくある質問</a>
+                    </li>
+                    <li>
+                      <a href="/book/qa">刊行物Ｑ＆Ａ</a>
+                    </li>
+                    <li>
+                      <a href="/book/download">ダウンロード</a>
+                    </li>
+                    <li>
+                      <a href="/article">コラム</a>
+                    </li>
+                    <li>
+                      <a href="/ml">メールマガジン</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" href="#custmor">書店・法人様
+                  <span class="caret"></span>
+                </a>
+              </div>
+              <div id="custmor" class="accordion-body collapse">
+                <div class="accordion-inner">
+                  <ul>
+                    <li>
+                      <a href="/bookstore">書店様</a>
+                    </li>
+                    <li>
+                      <a href="/biz">企業・教育機関様</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+          <div class="link">
+       <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <h2>会社情報</h2>
+              <ul>
+                <li>
+                  <a href="/">TOP</a>
+                </li>
+                <li>
+                  <a href="/about">会社案内</a>
+                </li>
+                 <li>
+                  <a href="/mission">企業理念</a>
+                </li>
+                <li>
+                  <a href="/service">サービス案内</a>
+                </li>
+                <li>
+                  <a href="/press">お知らせ</a>
+                </li>
+                <li>
+                  <a href="/ir">IR情報</a>
+                </li>
+                <li>
+                  <a href="/map">アクセス</a>
+                </li>
+                <li>
+                  <a href="/recruit">採用情報</a>
+                </li>
+                <li class="last">
+                  <a href="/contact">お問い合わせ</a>
+                </li>
+                <li>
+                  <a href="/privacy">個人情報保護</a>
+                </li>
+                <li>
+                  <a href="/exemption">免責事項</a>
+                </li>
+                <li>
+                  <a href="/privacy/social-policy/">SNS利用ポリシー</a>
+                </li>
+                 <li>
+                  <a href="/toauthors">著作者様へ</a>
+                </li>
+                <li>
+                  <a href="https://shoeisha.jp" target="_blank">SHOEISHA iD</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h2>運営サイト</h2>
+              <ul>
+                <li>
+                  <a href="/book/">本</a>
+                </li>
+                <li>
+                  <a target="_blank" href="https://codezine.jp/">プログラミング</a>
+                </li>
+                <li>
+                  <a target="_blank" href="https://enterprisezine.jp/">企業ITとマネジメント</a>
+                </li>
+                <li>
+                  <a target="_blank" href="https://markezine.jp/">マーケティング</a>
+                </li>
+                <li>
+                  <a target="_blank" href="https://moneyzine.jp/">株式投資</a>
+                </li>
+                <li>
+                  <a target="_blank" href="http://selectbox.shoeisha.jp/">ホワイトペーパー</a>
+                </li>
+                <li >
+                  <a target="_blank" href="https://eczine.jp/">ECマーケティング</a>
+                </li>
+                <li >
+                  <a target="_blank" href="https://bizzine.jp/">イノベーション</a>
+                </li>
+                <li>
+                  <a target="_blank" href="https://hrzine.jp/">人事</a>
+                </li>
+                <li>
+                  <a target="_blank" href="https://edtechzine.jp/">教育ICT</a>
+                </li>
+                <li>
+                  <a target="_blank" href="https://minna-no-kurashi.jp/">暮らし・家事</a>
+                </li>
+                <li>
+                  <a target="_blank" href="https://saleszine.jp/">セールス</a>
+                </li>
+                <li>
+                  <a target="_blank" href="https://event.shoeisha.jp/">イベント・セミナー</a>
+                </li>
+                <li>
+                  <a target="_blank" href="https://www.shoeisha.co.jp/ad/">広告掲載のご案内</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h2>直販サイト</h2>
+              <ul>
+                <li>
+                  <a target="_blank" href="https://www.seshop.com/">SEshop.com</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h2>グループ企業</h2>
+              <ul>
+                <li>
+                  <a target="_blank" href="http://www.sehi.co.jp/">SE H&amp;I</a>
+                </li>
+                <li>
+                  <a target="_blank" href="https://shoeishaacademy.co.jp/">翔泳社アカデミー</a>
+                  <ul style="list-style-type:disc;margin: 0 0 0 1.5em;">
+                        <li style="margin: 5px;">
+                          <a target="_blank" href="https://www.denken3.com/">電験三種</a>
+                        </li>
+                        <li style="margin: 5px;">
+                          <a target="_blank" href="https://www.denkou.info/">電気工事士講座</a>
+                        </li>
+                        <li style="margin: 5px;">
+                          <a target="_blank" href="https://www.denkou.info/kouza/denkou1/">第一種電気工事士</a>
+                        </li>
+                        <li  style="margin: 5px;">
+                          <a target="_blank" href="https://www.denkou.info/kouza/denkou2/">第二種電気工事士</a>
+                        </li>
+                  </ul>
+                </li>
+                <li>
+                  <a target="_blank" href="https://www.seplus.jp/">SEプラス</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <div class="copyright">Copyright © 1985-2021 SHOEISHA, All rights reserved.</div>
+          </div>
+          <div class="col-md-7 companybanner">
+            <div class=" pull-right">
+              <a href="https://privacymark.jp/" target="_blank"><img alt="" src="/static/common/images/pmark.gif"></a>
+              <a href="http://www.sehi.co.jp/" target="_blank"><img alt="" src="/static/common/images/ToshoJasdaqSEHIG_land.png"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+ </footer>
+  <p id="page-top" style="display: block;"> <a href="#top-menu"> <span class="glyphicon glyphicon-chevron-up"></span> </a> </p>
+
+
+
+
+<script type="text/javascript">
+<!--
+$(function(){
+  function changeInputType(inputId, type) {
+      var input = $("#" + inputId);
+      $(input).replaceWith($('<input class="form-control" placeholder="Password" />').val(input.val()).attr("placeholder", input.attr("placeholder")).attr("id", inputId).attr("type", type).attr("name", 'password'));
+  }
+
+  $("#show-ps").change(function() {
+      //チェックされてるときはtextを適応する
+      if ($(this).prop('checked')) {
+          changeInputType("password", "text");
+      } else {
+          changeInputType("password", "password");
+      }
+  });
+
+  if ($("#show-ps").attr("checked")) {
+      changeInputType("password", "text");
+  }
+});
+// -->
+</script>
+​
+<div class="modal" id="modal_login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="closebox" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">ログイン</h4>
+
+      </div>
+      <form class="form-horizontal" id="LoginForm" role="form" action="https://www.shoeisha.co.jp/secom/user/login" method="POST">
+      <div class="modal-body">
+          <div id="valid_message"></div>
+          <input type="hidden" name="ref" value="/book/article/detail/290">
+          <div class="form-group">
+            <label for="inputEmail1" class="col-md-3 control-label">Eメール</label>
+            <div class="col-md-9">
+              <input type="text" name="email" class="form-control" id="email" placeholder="Email">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputPassword1" class="col-md-3 control-label">パスワード</label>
+            <div class="col-md-9">
+              <input type="password" name="password" class="form-control" id="password" placeholder="Password">
+              <br /><input id="show-ps" type="checkbox" /><label for="show-ps">パスワードを表示</label>
+            </div>
+          </div>
+          <p style="margin: 0;font-size:12px;font-weight: bold;">※旧SEメンバーシップ会員の方は、同じ登録情報（Eメール＆パスワード）でログインいただけます。</p>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-warning" id="login_submit">ログイン</button>
+        <a href="https://shoeisha.jp/users/password" class="btn btn-default" target="_blank">パスワードを忘れた</a>
+      </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+      
+
+
+  <!-- TemplateEnd -->
+
+  </body>
+</html>
